@@ -1,0 +1,21 @@
+print.coeffvar <- function(x,digits=max(4,getOption("digits")-4),...)
+{
+  cat("\n")
+  cat("Diversity as disparity: Coefficient of Variation")
+  cat("\n\n Call: \n")
+  cat("",deparse(x$call), "\n\n")
+  cat(" Data: ")
+  cat( if (length(x$data) >= 5) x$data[1:5] else x$data[1:length(x$data)])
+  cat(if (length(x$data) <= 5) "" else " ...", "\n")
+  cat(" Minimum: ", x$min,"\n")
+  cat(" Maximum: ", x$max,"\n")
+  cat(" Coefficient of Variation (CV): ")
+  cat(formatC(x$cv, digits = digits), "\n")
+  cat(" Maximum value of Coefficient of Variation (CVmax): ")
+  cat(formatC(x$cv.max, digits = digits), "\n")
+  cat(" Normalized value of Coefficient of Variation (CVnorm): ")
+  cat(formatC(x$cv.norm, digits = digits), "\n")
+  cat("\n\n")
+  invisible(x)
+}
+

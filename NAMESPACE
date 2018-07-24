@@ -1,0 +1,8 @@
+export(blau.index,coeff.variation,gini.coefficient,m.euclidean.dist,std.deviation,teachman.index)
+
+S3method (print,blau)
+S3method (print,coeffvar)
+S3method (print,deviation)
+S3method (print,euclidean)
+S3method (print,gini)
+S3method (print,teachman)

@@ -1,0 +1,22 @@
+print.euclidean <- function(x,digits=max(4,getOption("digits")-4),...)
+{
+  cat("\n")
+  cat("Diversity as separation: Mean Euclidean Distance")
+  cat("\n\n Call: \n")
+  cat("",deparse(x$call), "\n\n")
+  cat(" Method: ",x$method, "\n")
+  cat(" Data: ")
+  cat( if (length(x$data) >= 5) x$data[1:5] else x$data[1:length(x$data)])
+  cat(if (length(x$data) <= 5) "" else " ...", "\n")
+  cat(" Minimum: ", x$min,"\n")
+  cat(" Maximum: ", x$max,"\n")
+  cat(" Mean Euclidean distance (MED): ")
+  cat(formatC(x$med, digits = digits), "\n")
+  cat(" Maximum value of mean Euclidean distance (MEDmax): ")
+  cat(formatC(x$med.max, digits = digits), "\n")
+  cat(" Normalized value of mean Euclidean distance (MEDnorm): ")
+  cat(formatC(x$med.norm, digits = digits), "\n")
+  cat("\n\n")
+  invisible(x)
+}
+

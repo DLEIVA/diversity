@@ -1,0 +1,14 @@
+citHeader("To cite the diversity package in publications use:")
+
+citEntry(entry = "Article",
+  title        = "Some common indices of group diversity: upper boundaries",
+  volume	     = "111",
+  doi          = "10.2466/01.09.21.PRO.111.6.777-796",
+  number       = "3",
+  journal      = "Psychological Reports",
+  author       = personList(as.person("Antonio Solanas"), as.person("Rejina M. Selvam"), as.person("David Leiva"), as.person("David Leiva")),
+  year         = "2012",
+  pages    = "777--796",
+
+textVersion  = "Solanas, A., Selvam, R. M., Navarro, J, & Leiva, D. (2012). Some common indices of group diversity: upper boundaries. Psychological Reports, 111, 777-796. doi:10.2466/01.09.21.PRO.111.6.777-796"
+)

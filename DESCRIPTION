@@ -1,0 +1,11 @@
+Package: diversity
+Type: Package
+Title: Diversity indexes for organizational research
+Version: 0.1-1
+Date: 2015-03-10
+Author: Antonio Solanas, Rejina Selvam, Jose Navarro, and David Leiva.
+Maintainer: David Leiva <dleivaur@ub.edu>
+Description: This package provides several indexes for quantifying
+        diversity as variety, disparity and separation.
+License: GPL (>= 2)
+Packaged: 2015-03-10 08:41:14 UTC; dleivaur

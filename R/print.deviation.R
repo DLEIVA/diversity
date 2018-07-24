@@ -1,0 +1,21 @@
+print.deviation <- function(x,digits=max(4,getOption("digits")-4),...)
+{
+  cat("\n")
+  cat("Diversity as separation: Standard Deviation")
+  cat("\n\n Call: \n")
+  cat("",deparse(x$call), "\n\n")
+  cat(" Data: ")
+  cat( if (length(x$data) >= 5) x$data[1:5] else x$data[1:length(x$data)])
+  cat(if (length(x$data) <= 5) "" else " ...", "\n")
+  cat(" Minimum: ", x$min,"\n")
+  cat(" Maximum: ", x$max,"\n")
+  cat(" Standard Deviation (sd): ")
+  cat(formatC(x$std.dev, digits = digits), "\n")
+  cat(" Maximum value of Standard Deviation (sdmax): ")
+  cat(formatC(x$std.dev.max, digits = digits), "\n")
+  cat(" Normalized value of Standard Deviation (sdnorm): ")
+  cat(formatC(x$std.dev.norm, digits = digits), "\n")
+  cat("\n\n")
+  invisible(x)
+}
+
